@@ -1,0 +1,12 @@
+*.[ao]
+*.log
+*~
+*#
+*swp
+*out
+*pyc
+*.dat
+*.db
+/comment
+tags
+.DS_Store
