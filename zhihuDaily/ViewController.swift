@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tv.delegate = self
         print("hight: \(self.view.frame.height)")
-        tv.frame = CGRectMake(0, 50, self.view.frame.width, self.view.frame.height-60)
+        tv.frame = CGRectMake(30, 50, self.view.frame.width, self.view.frame.height-60)
         tv.dataSource = self
         
         tv.registerClass(UITableViewCell.self, forCellReuseIdentifier: "zhihuIndex")
@@ -88,6 +88,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         //cell.textLabel!.
         //print("cell hight: \(cell.frame.height)")
         return cell
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 99
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
