@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         tv.delegate = self
         print("hight: \(self.view.frame.height)")
-        tv.frame = CGRectMake(30, 50, self.view.frame.width, self.view.frame.height-60)
+        tv.frame = CGRectMake(5, 50, self.view.frame.width, self.view.frame.height-60)
         tv.dataSource = self
         
         tv.registerClass(UITableViewCell.self, forCellReuseIdentifier: "zhihuIndex")

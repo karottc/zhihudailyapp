@@ -20,7 +20,7 @@ class ZhihuData: NSObject, NSURLConnectionDelegate {
         
         let urlSession:NSURLSession = NSURLSession.sharedSession()
         let task = urlSession.dataTaskWithURL(url, completionHandler: getURLData)
-        task?.resume()
+        task.resume()
     }
     func getNextList(timestamp:String) {
         print("==================next list=================timestamp=\(timestamp)")
@@ -28,7 +28,7 @@ class ZhihuData: NSObject, NSURLConnectionDelegate {
         let url:NSURL = NSURL(string: urlString)!
         let urlSession:NSURLSession = NSURLSession.sharedSession()
         let task = urlSession.dataTaskWithURL(url, completionHandler: getURLData)
-        task?.resume()
+        task.resume()
     }
     func getURLData(data:NSData?, response:NSURLResponse?, error:NSError?) -> Void {
         print("-------------url session---------")
@@ -79,7 +79,7 @@ class ZhihuData: NSObject, NSURLConnectionDelegate {
         let url:NSURL = NSURL(string: urlString)!
         let urlSession:NSURLSession = NSURLSession.sharedSession()
         let task = urlSession.dataTaskWithURL(url, completionHandler: getStoryData)
-        task?.resume()
+        task.resume()
     }
     
     func getStoryData(data:NSData?, response:NSURLResponse?, error:NSError?) -> Void {

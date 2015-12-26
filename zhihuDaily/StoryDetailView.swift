@@ -60,7 +60,7 @@ class StoryDetailView:UIViewController, UITableViewDataSource,UITableViewDelegat
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("detail", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("detail", forIndexPath: indexPath) 
         let numIndex = indexPath.section + indexPath.row
         //let numIndex = indexPath.row
 
